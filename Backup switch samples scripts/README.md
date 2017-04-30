@@ -1,4 +1,4 @@
-AutoTelnet sample script files for backup some switchs models by esporting configuration on a TFTP server, these the switchs models:
+AutoTelnet sample script files for backup the following switchs models by esporting configuration on a TFTP server:
 * HP V1910
 * HP 1920
 * HP A5500 EI
