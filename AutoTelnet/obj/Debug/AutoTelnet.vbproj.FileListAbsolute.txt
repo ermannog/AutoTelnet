@@ -1,0 +1,41 @@
+E:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\bin\Debug\AutoTelnet.exe.config
+E:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\bin\Debug\AutoTelnet.exe
+E:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\bin\Debug\AutoTelnet.pdb
+E:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.Resources.resources
+E:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.vbproj.GenerateResource.Cache
+E:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.exe
+E:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.pdb
+E:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.LogDialog.resources
+E:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.ExpressionDialog.resources
+E:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.MainForm.resources
+E:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.AboutBox.resources
+E:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.LicenseForm.resources
+D:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\bin\Debug\AutoTelnet.exe.config
+D:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\bin\Debug\AutoTelnet.exe
+D:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\bin\Debug\AutoTelnet.pdb
+D:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.AboutBox.resources
+D:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.LicenseForm.resources
+D:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.LogDialog.resources
+D:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.MainForm.resources
+D:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.Resources.resources
+D:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.ExpressionDialog.resources
+D:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.vbproj.GenerateResource.Cache
+D:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.exe
+D:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.pdb
+E:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.CommandDialog.resources
+D:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.CommandDialog.resources
+F:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\bin\Debug\AutoTelnet.exe.config
+F:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.exe
+F:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.pdb
+F:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\bin\Debug\AutoTelnet.exe
+F:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\bin\Debug\AutoTelnet.pdb
+F:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.AboutBox.resources
+F:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.LicenseForm.resources
+F:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.LogDialog.resources
+F:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.MainForm.resources
+F:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.Resources.resources
+F:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.ExpressionDialog.resources
+F:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.vbproj.GenerateResource.Cache
+F:\Dev\DevAdmin2013\Sources\AutoTelnet - 1.3.0\AutoTelnet\AutoTelnet\bin\Debug\AutoTelnet.exe.config
+F:\Dev\DevAdmin2013\Sources\AutoTelnet - 1.3.0\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.exe
+F:\Dev\DevAdmin2013\Sources\AutoTelnet - 1.3.0\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.pdb
