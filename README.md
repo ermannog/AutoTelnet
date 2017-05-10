@@ -9,4 +9,8 @@ For more info see the post [AutoTelnet 1.0.0](https://www.devadmin.it/2016/08/12
 
 ![AutoTelnet Screenshot Commands](https://cloud.githubusercontent.com/assets/20457171/25888506/bd519022-3566-11e7-85ca-8db3f7466797.png)
 
-![AutoTelnet Screenshot Commands](https://cloud.githubusercontent.com/assets/20457171/25888534/dbffe3ac-3566-11e7-9968-0bae76c78469.png)
+![AutoTelnet Screenshot Expressions](https://cloud.githubusercontent.com/assets/20457171/25888534/dbffe3ac-3566-11e7-9968-0bae76c78469.png)
+
+![AutoTelnet Screenshot Settings](https://cloud.githubusercontent.com/assets/20457171/25888591/1d95671a-3567-11e7-9596-bd83276edaa7.png)
+
+![AutoTelnet Screenshot Command-line](https://cloud.githubusercontent.com/assets/20457171/25888630/3a5fcd4a-3567-11e7-9fc1-55345280e8cd.png)
