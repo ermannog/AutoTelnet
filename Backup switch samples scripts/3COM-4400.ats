@@ -31,7 +31,7 @@ logout</Text>
     </AutoTelnetScriptParameter>
     <AutoTelnetScriptParameter>
       <Name>@TFTPServerIP</Name>
-      <DefaultValue>10.137.0.36</DefaultValue>
+      <DefaultValue>10.0.0.10</DefaultValue>
     </AutoTelnetScriptParameter>
     <AutoTelnetScriptParameter>
       <Name>@IDDate</Name>
