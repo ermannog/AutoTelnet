@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<AutoTelnetScript xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Host>10.102.234.87</Host>
+  <Text>
+host-name:NAME
+
+quit
+</Text>
+  <SendEndOfLine>Lf</SendEndOfLine>
+  <DelayReadTime>2500</DelayReadTime>
+  <Parameters />
+</AutoTelnetScript>
