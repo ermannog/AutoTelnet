@@ -203,7 +203,6 @@
         Me.SetWaitCursor(True)
         Try
             Using dlg As New LogDialog
-                'dlg.LogFile = Me.txtLogFile.Text
                 Dim parameters = Me.GetParametersValuesFromControls()
                 Dim logFile = Util.ReplaceParameter(Me.txtLogFile.Text, Me.CurrentAutoTelnetScript, parameters)
                 dlg.LogFile = logFile
@@ -336,11 +335,17 @@
             Me.bkwScriptSession = Util.CreateTelnetSession(Me.CurrentAutoTelnetScript, parameters)
             Me.bkwScriptCommands = Util.CreateTelnetSessionCommands(Me.CurrentAutoTelnetScript, parameters)
 
-            'Aggiunta handler eventi
+            'Aggiunta handler eventi per gestione Output
             AddHandler Me.bkwScriptSession.OutputInformationAdded, AddressOf Me.bkwScriptSession_OutputInformationAdded
             AddHandler Me.bkwScriptSession.OutputCommandAdded, AddressOf Me.bkwScriptSession_OutputCommandAdded
             AddHandler Me.bkwScriptSession.OutputResponseAdded, AddressOf Me.bkwScriptSession_OutputResponseAdded
             AddHandler Me.bkwScriptSession.OutputErrorAdded, AddressOf Me.bkwScriptSession_OutputErrorAdded
+
+            'Aggiunta handler eventi per gestione log
+            AddHandler Me.bkwScriptSession.OutputInformationAdded, AddressOf My.Application.LogWriteNewEntryOnTelnetSessionOutputEvents
+            AddHandler Me.bkwScriptSession.OutputCommandAdded, AddressOf My.Application.LogWriteNewEntryOnTelnetSessionOutputEvents
+            AddHandler Me.bkwScriptSession.OutputResponseAdded, AddressOf My.Application.LogWriteNewEntryOnTelnetSessionOutputEvents
+            AddHandler Me.bkwScriptSession.OutputErrorAdded, AddressOf My.Application.LogWriteNewEntryOnTelnetSessionOutputEvents
         Catch ex As Exception
             UtilMsgBox.ShowErrorException(ex, False)
 
@@ -375,7 +380,7 @@
 
 #Region "Gestione Dati"
     Private Sub LoadDataFromControls()
-        Me.CurrentAutoTelnetScript = New AutoTelnetScript()
+        Me.CurrentAutoTelnetScript = New AutoTelnetScript
 
         'Commands
         Me.CurrentAutoTelnetScript.Host = Me.txtHost.Text
@@ -533,7 +538,7 @@
         [Error]
     End Enum
 
-    Private Overloads Sub AddOutput(type As OutputTypes, text As String)
+    Private Sub AddOutput(type As OutputTypes, text As String)
         'Impostazione Colore e sezione log
         Dim logEntryType As UtilLogFileWriter.EntryTypes = Nothing
         Select Case type
@@ -554,8 +559,6 @@
         Me.txtOutput.SelectedText &= text.TrimNewLine() & System.Environment.NewLine
         Me.txtOutput.ScrollToCaret()
         Me.txtOutput.Refresh()
-
-        If UtilLogFileWriter.LogEnabled Then UtilLogFileWriter.WriteNewEntry(logEntryType, text.TrimNewLine())
     End Sub
 #End Region
 

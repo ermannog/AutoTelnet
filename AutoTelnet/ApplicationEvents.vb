@@ -151,8 +151,17 @@
                         successfulOutputText = Util.ReplaceParameter(ats.BatchSuccessfulOutputText, ats, Me.startupParametersValue)
                         failedOutputText = Util.ReplaceParameter(ats.BatchFailedOutputText, ats, Me.startupParametersValue)
 
+                        'Creazione telnet session
                         Dim ts = Util.CreateTelnetSession(ats, Me.startupParametersValue)
                         Dim tsc = Util.CreateTelnetSessionCommands(ats, Me.startupParametersValue)
+
+                        'Aggiunta handler eventi per gestione log
+                        AddHandler ts.OutputInformationAdded, AddressOf My.Application.LogWriteNewEntryOnTelnetSessionOutputEvents
+                        AddHandler ts.OutputCommandAdded, AddressOf My.Application.LogWriteNewEntryOnTelnetSessionOutputEvents
+                        AddHandler ts.OutputResponseAdded, AddressOf My.Application.LogWriteNewEntryOnTelnetSessionOutputEvents
+                        AddHandler ts.OutputErrorAdded, AddressOf My.Application.LogWriteNewEntryOnTelnetSessionOutputEvents
+
+                        'Invio comandi
                         ts.SendCommands(tsc)
 
                         'Gestione Output
@@ -192,7 +201,30 @@
                 End Try
             End If
         End Sub
+
+#Region "Gestione Log in modalità batch"
+        Friend Sub LogWriteNewEntryOnTelnetSessionOutputEvents(sender As Object, e As System.EventArgs)
+            If Not UtilLogFileWriter.LogEnabled Then Exit Sub
+
+            If TypeOf e Is TelnetSessionOutputInformationAddedEventArgs Then
+                With DirectCast(e, TelnetSessionOutputInformationAddedEventArgs)
+                    UtilLogFileWriter.WriteNewEntry(UtilLogFileWriter.EntryTypes.Information, .Text.TrimNewLine())
+                End With
+            ElseIf TypeOf e Is TelnetSessionOutputCommandAddedEventArgs Then
+                With DirectCast(e, TelnetSessionOutputCommandAddedEventArgs)
+                    UtilLogFileWriter.WriteNewEntry(UtilLogFileWriter.EntryTypes.Command, .Text.TrimNewLine())
+                End With
+            ElseIf TypeOf e Is TelnetSessionOutputResponseAddedEventArgs Then
+                With DirectCast(e, TelnetSessionOutputResponseAddedEventArgs)
+                    UtilLogFileWriter.WriteNewEntry(UtilLogFileWriter.EntryTypes.Response, .Text.TrimNewLine())
+                End With
+            ElseIf TypeOf e Is TelnetSessionOutputErrorAddedEventArgs Then
+                With DirectCast(e, TelnetSessionOutputErrorAddedEventArgs)
+                    UtilLogFileWriter.WriteNewEntry(UtilLogFileWriter.EntryTypes.Error, .Text.TrimNewLine())
+                End With
+            End If
+        End Sub
+#End Region
     End Class
 
 End Namespace
-

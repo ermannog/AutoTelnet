@@ -39,3 +39,17 @@ F:\Dev\DevAdmin2013\Sources\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.vbproj.Ge
 F:\Dev\DevAdmin2013\Sources\AutoTelnet - 1.3.0\AutoTelnet\AutoTelnet\bin\Debug\AutoTelnet.exe.config
 F:\Dev\DevAdmin2013\Sources\AutoTelnet - 1.3.0\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.exe
 F:\Dev\DevAdmin2013\Sources\AutoTelnet - 1.3.0\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.pdb
+C:\Users\Ermanno\Source\Repos\AutoTelnet\AutoTelnet\bin\Debug\AutoTelnet.exe.config
+C:\Users\Ermanno\Source\Repos\AutoTelnet\AutoTelnet\bin\Debug\AutoTelnet.exe
+C:\Users\Ermanno\Source\Repos\AutoTelnet\AutoTelnet\bin\Debug\AutoTelnet.pdb
+C:\Users\Ermanno\Source\Repos\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.vbprojAssemblyReference.cache
+C:\Users\Ermanno\Source\Repos\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.AboutBox.resources
+C:\Users\Ermanno\Source\Repos\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.LicenseForm.resources
+C:\Users\Ermanno\Source\Repos\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.LogDialog.resources
+C:\Users\Ermanno\Source\Repos\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.MainForm.resources
+C:\Users\Ermanno\Source\Repos\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.Resources.resources
+C:\Users\Ermanno\Source\Repos\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.ExpressionDialog.resources
+C:\Users\Ermanno\Source\Repos\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.vbproj.GenerateResource.cache
+C:\Users\Ermanno\Source\Repos\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.vbproj.CoreCompileInputs.cache
+C:\Users\Ermanno\Source\Repos\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.exe
+C:\Users\Ermanno\Source\Repos\AutoTelnet\AutoTelnet\obj\Debug\AutoTelnet.pdb
