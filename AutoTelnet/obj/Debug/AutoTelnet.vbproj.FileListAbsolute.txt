@@ -79,3 +79,4 @@ F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0\AutoTelnet\obj\Debug\AutoTelnet.Exp
 F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0\AutoTelnet\obj\Debug\AutoTelnet.vbproj.GenerateResource.Cache
 F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0\AutoTelnet\obj\Debug\AutoTelnet.exe
 F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0\AutoTelnet\obj\Debug\AutoTelnet.pdb
+F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0\AutoTelnet\obj\Debug\AutoTelnet.vbprojResolveAssemblyReference.cache
