@@ -116,6 +116,7 @@ Partial Class MainForm
         Me.sfdScript = New System.Windows.Forms.SaveFileDialog()
         Me.tipMain = New System.Windows.Forms.ToolTip(Me.components)
         Me.sfdBatchOutputFile = New System.Windows.Forms.SaveFileDialog()
+        Me.ofdLog = New System.Windows.Forms.OpenFileDialog()
         Me.mnsMain.SuspendLayout()
         Me.tlsMain.SuspendLayout()
         CType(Me.nudDelayReadTime, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -153,7 +154,7 @@ Partial Class MainForm
         Me.mnsMain.Location = New System.Drawing.Point(0, 0)
         Me.mnsMain.Name = "mnsMain"
         Me.mnsMain.Padding = New System.Windows.Forms.Padding(8, 2, 0, 2)
-        Me.mnsMain.Size = New System.Drawing.Size(982, 28)
+        Me.mnsMain.Size = New System.Drawing.Size(982, 24)
         Me.mnsMain.TabIndex = 0
         Me.mnsMain.Text = "MenuStrip1"
         '
@@ -161,7 +162,7 @@ Partial Class MainForm
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mniFileNew, Me.mniFileOpen, Me.tssFile1, Me.mniFileSave, Me.mniFileSaveAs, Me.tssFile2, Me.mniFileExit})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(44, 24)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "&File"
         '
         'mniFileNew
@@ -170,7 +171,7 @@ Partial Class MainForm
         Me.mniFileNew.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.mniFileNew.Name = "mniFileNew"
         Me.mniFileNew.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
-        Me.mniFileNew.Size = New System.Drawing.Size(183, 26)
+        Me.mniFileNew.Size = New System.Drawing.Size(146, 22)
         Me.mniFileNew.Text = "&New"
         '
         'mniFileOpen
@@ -179,13 +180,13 @@ Partial Class MainForm
         Me.mniFileOpen.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.mniFileOpen.Name = "mniFileOpen"
         Me.mniFileOpen.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
-        Me.mniFileOpen.Size = New System.Drawing.Size(183, 26)
+        Me.mniFileOpen.Size = New System.Drawing.Size(146, 22)
         Me.mniFileOpen.Text = "&Open"
         '
         'tssFile1
         '
         Me.tssFile1.Name = "tssFile1"
-        Me.tssFile1.Size = New System.Drawing.Size(180, 6)
+        Me.tssFile1.Size = New System.Drawing.Size(143, 6)
         '
         'mniFileSave
         '
@@ -193,31 +194,31 @@ Partial Class MainForm
         Me.mniFileSave.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.mniFileSave.Name = "mniFileSave"
         Me.mniFileSave.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.mniFileSave.Size = New System.Drawing.Size(183, 26)
+        Me.mniFileSave.Size = New System.Drawing.Size(146, 22)
         Me.mniFileSave.Text = "&Save"
         '
         'mniFileSaveAs
         '
         Me.mniFileSaveAs.Name = "mniFileSaveAs"
-        Me.mniFileSaveAs.Size = New System.Drawing.Size(183, 26)
+        Me.mniFileSaveAs.Size = New System.Drawing.Size(146, 22)
         Me.mniFileSaveAs.Text = "Save &As"
         '
         'tssFile2
         '
         Me.tssFile2.Name = "tssFile2"
-        Me.tssFile2.Size = New System.Drawing.Size(180, 6)
+        Me.tssFile2.Size = New System.Drawing.Size(143, 6)
         '
         'mniFileExit
         '
         Me.mniFileExit.Name = "mniFileExit"
-        Me.mniFileExit.Size = New System.Drawing.Size(183, 26)
+        Me.mniFileExit.Size = New System.Drawing.Size(146, 22)
         Me.mniFileExit.Text = "E&xit"
         '
         'mniActions
         '
         Me.mniActions.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mniActionsRun, Me.mniActionsStop})
         Me.mniActions.Name = "mniActions"
-        Me.mniActions.Size = New System.Drawing.Size(70, 24)
+        Me.mniActions.Size = New System.Drawing.Size(59, 20)
         Me.mniActions.Text = "&Actions"
         '
         'mniActionsRun
@@ -226,7 +227,7 @@ Partial Class MainForm
         Me.mniActionsRun.Image = CType(resources.GetObject("mniActionsRun.Image"), System.Drawing.Image)
         Me.mniActionsRun.Name = "mniActionsRun"
         Me.mniActionsRun.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.R), System.Windows.Forms.Keys)
-        Me.mniActionsRun.Size = New System.Drawing.Size(170, 26)
+        Me.mniActionsRun.Size = New System.Drawing.Size(136, 22)
         Me.mniActionsRun.Text = "&Run"
         '
         'mniActionsStop
@@ -234,22 +235,21 @@ Partial Class MainForm
         Me.mniActionsStop.Enabled = False
         Me.mniActionsStop.Image = CType(resources.GetObject("mniActionsStop.Image"), System.Drawing.Image)
         Me.mniActionsStop.Name = "mniActionsStop"
-        Me.mniActionsStop.Size = New System.Drawing.Size(170, 26)
+        Me.mniActionsStop.Size = New System.Drawing.Size(136, 22)
         Me.mniActionsStop.Text = "&Stop"
         '
         'mniTools
         '
         Me.mniTools.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mniToolsLogViewer})
         Me.mniTools.Name = "mniTools"
-        Me.mniTools.Size = New System.Drawing.Size(56, 24)
+        Me.mniTools.Size = New System.Drawing.Size(47, 20)
         Me.mniTools.Text = "&Tools"
         '
         'mniToolsLogViewer
         '
-        Me.mniToolsLogViewer.Enabled = False
         Me.mniToolsLogViewer.Image = CType(resources.GetObject("mniToolsLogViewer.Image"), System.Drawing.Image)
         Me.mniToolsLogViewer.Name = "mniToolsLogViewer"
-        Me.mniToolsLogViewer.Size = New System.Drawing.Size(167, 26)
+        Me.mniToolsLogViewer.Size = New System.Drawing.Size(156, 26)
         Me.mniToolsLogViewer.Text = "&Log Viewer..."
         Me.mniToolsLogViewer.ToolTipText = "Open log file"
         '
@@ -257,20 +257,20 @@ Partial Class MainForm
         '
         Me.mniHelp.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mniHelpAbout})
         Me.mniHelp.Name = "mniHelp"
-        Me.mniHelp.Size = New System.Drawing.Size(53, 24)
+        Me.mniHelp.Size = New System.Drawing.Size(44, 20)
         Me.mniHelp.Text = "&Help"
         '
         'mniHelpAbout
         '
         Me.mniHelpAbout.Name = "mniHelpAbout"
-        Me.mniHelpAbout.Size = New System.Drawing.Size(134, 26)
+        Me.mniHelpAbout.Size = New System.Drawing.Size(116, 22)
         Me.mniHelpAbout.Text = "&About..."
         '
         'tlsMain
         '
         Me.tlsMain.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.tlsMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnOpen, Me.btnSave, Me.btnRun, Me.btnStop, Me.btnLogViewer})
-        Me.tlsMain.Location = New System.Drawing.Point(0, 28)
+        Me.tlsMain.Location = New System.Drawing.Point(0, 24)
         Me.tlsMain.Name = "tlsMain"
         Me.tlsMain.Size = New System.Drawing.Size(982, 27)
         Me.tlsMain.TabIndex = 1
@@ -317,7 +317,6 @@ Partial Class MainForm
         'btnLogViewer
         '
         Me.btnLogViewer.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.btnLogViewer.Enabled = False
         Me.btnLogViewer.Image = CType(resources.GetObject("btnLogViewer.Image"), System.Drawing.Image)
         Me.btnLogViewer.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnLogViewer.Name = "btnLogViewer"
@@ -332,7 +331,7 @@ Partial Class MainForm
         Me.cmbSendEndOfLine.Location = New System.Drawing.Point(132, 11)
         Me.cmbSendEndOfLine.Margin = New System.Windows.Forms.Padding(5)
         Me.cmbSendEndOfLine.Name = "cmbSendEndOfLine"
-        Me.cmbSendEndOfLine.Size = New System.Drawing.Size(300, 24)
+        Me.cmbSendEndOfLine.Size = New System.Drawing.Size(300, 21)
         Me.cmbSendEndOfLine.TabIndex = 21
         '
         'lblSendEndOfLineChar
@@ -341,7 +340,7 @@ Partial Class MainForm
         Me.lblSendEndOfLineChar.Location = New System.Drawing.Point(5, 15)
         Me.lblSendEndOfLineChar.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblSendEndOfLineChar.Name = "lblSendEndOfLineChar"
-        Me.lblSendEndOfLineChar.Size = New System.Drawing.Size(115, 17)
+        Me.lblSendEndOfLineChar.Size = New System.Drawing.Size(87, 13)
         Me.lblSendEndOfLineChar.TabIndex = 20
         Me.lblSendEndOfLineChar.Text = "Send end of line:"
         '
@@ -351,7 +350,7 @@ Partial Class MainForm
         Me.nudDelayReadTime.Margin = New System.Windows.Forms.Padding(5)
         Me.nudDelayReadTime.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.nudDelayReadTime.Name = "nudDelayReadTime"
-        Me.nudDelayReadTime.Size = New System.Drawing.Size(80, 22)
+        Me.nudDelayReadTime.Size = New System.Drawing.Size(80, 20)
         Me.nudDelayReadTime.TabIndex = 19
         Me.nudDelayReadTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         Me.nudDelayReadTime.Value = New Decimal(New Integer() {500, 0, 0, 0})
@@ -362,7 +361,7 @@ Partial Class MainForm
         Me.lblDelayReadTime.Location = New System.Drawing.Point(172, 25)
         Me.lblDelayReadTime.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblDelayReadTime.Name = "lblDelayReadTime"
-        Me.lblDelayReadTime.Size = New System.Drawing.Size(116, 17)
+        Me.lblDelayReadTime.Size = New System.Drawing.Size(86, 13)
         Me.lblDelayReadTime.TabIndex = 18
         Me.lblDelayReadTime.Text = "Read delay (ms):"
         '
@@ -372,7 +371,7 @@ Partial Class MainForm
         Me.nudPort.Margin = New System.Windows.Forms.Padding(5)
         Me.nudPort.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.nudPort.Name = "nudPort"
-        Me.nudPort.Size = New System.Drawing.Size(80, 22)
+        Me.nudPort.Size = New System.Drawing.Size(80, 20)
         Me.nudPort.TabIndex = 17
         Me.nudPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         Me.nudPort.Value = New Decimal(New Integer() {23, 0, 0, 0})
@@ -383,7 +382,7 @@ Partial Class MainForm
         Me.lblPort.Location = New System.Drawing.Point(9, 25)
         Me.lblPort.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblPort.Name = "lblPort"
-        Me.lblPort.Size = New System.Drawing.Size(38, 17)
+        Me.lblPort.Size = New System.Drawing.Size(29, 13)
         Me.lblPort.TabIndex = 16
         Me.lblPort.Text = "Port:"
         '
@@ -394,7 +393,7 @@ Partial Class MainForm
         Me.txtHost.Location = New System.Drawing.Point(119, 5)
         Me.txtHost.Margin = New System.Windows.Forms.Padding(5)
         Me.txtHost.Name = "txtHost"
-        Me.txtHost.Size = New System.Drawing.Size(477, 22)
+        Me.txtHost.Size = New System.Drawing.Size(477, 20)
         Me.txtHost.TabIndex = 15
         '
         'lblHost
@@ -403,7 +402,7 @@ Partial Class MainForm
         Me.lblHost.Location = New System.Drawing.Point(5, 9)
         Me.lblHost.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblHost.Name = "lblHost"
-        Me.lblHost.Size = New System.Drawing.Size(41, 17)
+        Me.lblHost.Size = New System.Drawing.Size(32, 13)
         Me.lblHost.TabIndex = 14
         Me.lblHost.Text = "Host:"
         '
@@ -431,21 +430,21 @@ Partial Class MainForm
         Me.tabMain.Controls.Add(Me.tbpSettings)
         Me.tabMain.Controls.Add(Me.tbpNotes)
         Me.tabMain.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tabMain.Location = New System.Drawing.Point(0, 55)
+        Me.tabMain.Location = New System.Drawing.Point(0, 51)
         Me.tabMain.Margin = New System.Windows.Forms.Padding(4)
         Me.tabMain.Name = "tabMain"
         Me.tabMain.SelectedIndex = 0
-        Me.tabMain.Size = New System.Drawing.Size(982, 576)
+        Me.tabMain.Size = New System.Drawing.Size(982, 580)
         Me.tabMain.TabIndex = 23
         '
         'tbpCommands
         '
         Me.tbpCommands.Controls.Add(Me.spcCommands1)
-        Me.tbpCommands.Location = New System.Drawing.Point(4, 25)
+        Me.tbpCommands.Location = New System.Drawing.Point(4, 22)
         Me.tbpCommands.Margin = New System.Windows.Forms.Padding(4)
         Me.tbpCommands.Name = "tbpCommands"
         Me.tbpCommands.Padding = New System.Windows.Forms.Padding(4)
-        Me.tbpCommands.Size = New System.Drawing.Size(974, 547)
+        Me.tbpCommands.Size = New System.Drawing.Size(974, 554)
         Me.tbpCommands.TabIndex = 0
         Me.tbpCommands.Text = "Commands"
         Me.tbpCommands.UseVisualStyleBackColor = True
@@ -466,8 +465,8 @@ Partial Class MainForm
         'spcCommands1.Panel2
         '
         Me.spcCommands1.Panel2.Controls.Add(Me.txtOutput)
-        Me.spcCommands1.Size = New System.Drawing.Size(966, 539)
-        Me.spcCommands1.SplitterDistance = 340
+        Me.spcCommands1.Size = New System.Drawing.Size(966, 546)
+        Me.spcCommands1.SplitterDistance = 345
         Me.spcCommands1.SplitterWidth = 5
         Me.spcCommands1.TabIndex = 0
         '
@@ -489,7 +488,7 @@ Partial Class MainForm
         Me.spcCommands2.Panel2.Controls.Add(Me.grdParameters)
         Me.spcCommands2.Panel2.Controls.Add(Me.pnlParametersDown)
         Me.spcCommands2.Panel2.Controls.Add(Me.pnlParametersUp)
-        Me.spcCommands2.Size = New System.Drawing.Size(966, 340)
+        Me.spcCommands2.Size = New System.Drawing.Size(966, 345)
         Me.spcCommands2.SplitterDistance = 614
         Me.spcCommands2.SplitterWidth = 5
         Me.spcCommands2.TabIndex = 0
@@ -501,7 +500,7 @@ Partial Class MainForm
         Me.txtScript.Location = New System.Drawing.Point(0, 74)
         Me.txtScript.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
         Me.txtScript.Name = "txtScript"
-        Me.txtScript.Size = New System.Drawing.Size(614, 222)
+        Me.txtScript.Size = New System.Drawing.Size(614, 227)
         Me.txtScript.TabIndex = 1
         Me.txtScript.Text = ""
         '
@@ -511,7 +510,7 @@ Partial Class MainForm
         Me.pnlCommandsDown.Controls.Add(Me.cmbSendEndOfLine)
         Me.pnlCommandsDown.Controls.Add(Me.lblSendEndOfLineChar)
         Me.pnlCommandsDown.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.pnlCommandsDown.Location = New System.Drawing.Point(0, 296)
+        Me.pnlCommandsDown.Location = New System.Drawing.Point(0, 301)
         Me.pnlCommandsDown.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlCommandsDown.Name = "pnlCommandsDown"
         Me.pnlCommandsDown.Size = New System.Drawing.Size(614, 44)
@@ -549,7 +548,7 @@ Partial Class MainForm
         Me.chkSendPassword.Location = New System.Drawing.Point(303, 42)
         Me.chkSendPassword.Margin = New System.Windows.Forms.Padding(5)
         Me.chkSendPassword.Name = "chkSendPassword"
-        Me.chkSendPassword.Size = New System.Drawing.Size(131, 21)
+        Me.chkSendPassword.Size = New System.Drawing.Size(102, 17)
         Me.chkSendPassword.TabIndex = 13
         Me.chkSendPassword.Text = "Send password:"
         Me.chkSendPassword.UseVisualStyleBackColor = True
@@ -560,7 +559,7 @@ Partial Class MainForm
         Me.chkSendUser.Location = New System.Drawing.Point(5, 42)
         Me.chkSendUser.Margin = New System.Windows.Forms.Padding(5)
         Me.chkSendUser.Name = "chkSendUser"
-        Me.chkSendUser.Size = New System.Drawing.Size(99, 21)
+        Me.chkSendUser.Size = New System.Drawing.Size(77, 17)
         Me.chkSendUser.TabIndex = 12
         Me.chkSendUser.Text = "Send user:"
         Me.chkSendUser.UseVisualStyleBackColor = True
@@ -573,7 +572,7 @@ Partial Class MainForm
         Me.txtPassword.Location = New System.Drawing.Point(449, 39)
         Me.txtPassword.Margin = New System.Windows.Forms.Padding(5)
         Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(146, 22)
+        Me.txtPassword.Size = New System.Drawing.Size(146, 20)
         Me.txtPassword.TabIndex = 11
         Me.txtPassword.UseSystemPasswordChar = True
         '
@@ -583,7 +582,7 @@ Partial Class MainForm
         Me.txtUser.Location = New System.Drawing.Point(119, 39)
         Me.txtUser.Margin = New System.Windows.Forms.Padding(5)
         Me.txtUser.Name = "txtUser"
-        Me.txtUser.Size = New System.Drawing.Size(172, 22)
+        Me.txtUser.Size = New System.Drawing.Size(172, 20)
         Me.txtUser.TabIndex = 10
         '
         'grdParameters
@@ -601,7 +600,7 @@ Partial Class MainForm
         Me.grdParameters.Name = "grdParameters"
         Me.grdParameters.RowHeadersVisible = False
         Me.grdParameters.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grdParameters.Size = New System.Drawing.Size(347, 262)
+        Me.grdParameters.Size = New System.Drawing.Size(347, 267)
         Me.grdParameters.TabIndex = 12
         '
         'colParametersName
@@ -626,7 +625,7 @@ Partial Class MainForm
         Me.pnlParametersDown.Controls.Add(Me.btnAddParameter)
         Me.pnlParametersDown.Controls.Add(Me.btnExpression)
         Me.pnlParametersDown.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.pnlParametersDown.Location = New System.Drawing.Point(0, 296)
+        Me.pnlParametersDown.Location = New System.Drawing.Point(0, 301)
         Me.pnlParametersDown.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlParametersDown.Name = "pnlParametersDown"
         Me.pnlParametersDown.Size = New System.Drawing.Size(347, 44)
@@ -683,7 +682,7 @@ Partial Class MainForm
         Me.lblParameters.Location = New System.Drawing.Point(5, 9)
         Me.lblParameters.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblParameters.Name = "lblParameters"
-        Me.lblParameters.Size = New System.Drawing.Size(85, 17)
+        Me.lblParameters.Size = New System.Drawing.Size(63, 13)
         Me.lblParameters.TabIndex = 13
         Me.lblParameters.Text = "Parameters:"
         '
@@ -696,7 +695,7 @@ Partial Class MainForm
         Me.txtOutput.Margin = New System.Windows.Forms.Padding(5)
         Me.txtOutput.Name = "txtOutput"
         Me.txtOutput.ReadOnly = True
-        Me.txtOutput.Size = New System.Drawing.Size(966, 194)
+        Me.txtOutput.Size = New System.Drawing.Size(966, 196)
         Me.txtOutput.TabIndex = 1
         Me.txtOutput.Text = ""
         '
@@ -707,11 +706,11 @@ Partial Class MainForm
         Me.tbpSettings.Controls.Add(Me.grpSecurity)
         Me.tbpSettings.Controls.Add(Me.grpSettingsLog)
         Me.tbpSettings.Controls.Add(Me.grpSettingsConnection)
-        Me.tbpSettings.Location = New System.Drawing.Point(4, 25)
+        Me.tbpSettings.Location = New System.Drawing.Point(4, 22)
         Me.tbpSettings.Margin = New System.Windows.Forms.Padding(4)
         Me.tbpSettings.Name = "tbpSettings"
         Me.tbpSettings.Padding = New System.Windows.Forms.Padding(4)
-        Me.tbpSettings.Size = New System.Drawing.Size(974, 551)
+        Me.tbpSettings.Size = New System.Drawing.Size(974, 550)
         Me.tbpSettings.TabIndex = 1
         Me.tbpSettings.Text = "Settings"
         Me.tbpSettings.UseVisualStyleBackColor = True
@@ -744,7 +743,7 @@ Partial Class MainForm
         Me.cmbBatchOuputMode.Location = New System.Drawing.Point(804, 73)
         Me.cmbBatchOuputMode.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbBatchOuputMode.Name = "cmbBatchOuputMode"
-        Me.cmbBatchOuputMode.Size = New System.Drawing.Size(144, 24)
+        Me.cmbBatchOuputMode.Size = New System.Drawing.Size(144, 21)
         Me.cmbBatchOuputMode.TabIndex = 18
         '
         'lblBatchOutputMode
@@ -755,7 +754,7 @@ Partial Class MainForm
         Me.lblBatchOutputMode.Location = New System.Drawing.Point(758, 76)
         Me.lblBatchOutputMode.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblBatchOutputMode.Name = "lblBatchOutputMode"
-        Me.lblBatchOutputMode.Size = New System.Drawing.Size(47, 17)
+        Me.lblBatchOutputMode.Size = New System.Drawing.Size(37, 13)
         Me.lblBatchOutputMode.TabIndex = 18
         Me.lblBatchOutputMode.Text = "Mode:"
         '
@@ -779,7 +778,7 @@ Partial Class MainForm
         Me.txtBatchOutputFile.Location = New System.Drawing.Point(161, 73)
         Me.txtBatchOutputFile.Margin = New System.Windows.Forms.Padding(5)
         Me.txtBatchOutputFile.Name = "txtBatchOutputFile"
-        Me.txtBatchOutputFile.Size = New System.Drawing.Size(504, 22)
+        Me.txtBatchOutputFile.Size = New System.Drawing.Size(504, 20)
         Me.txtBatchOutputFile.TabIndex = 18
         '
         'chkBatchOutputFile
@@ -788,7 +787,7 @@ Partial Class MainForm
         Me.chkBatchOutputFile.Location = New System.Drawing.Point(12, 75)
         Me.chkBatchOutputFile.Margin = New System.Windows.Forms.Padding(5)
         Me.chkBatchOutputFile.Name = "chkBatchOutputFile"
-        Me.chkBatchOutputFile.Size = New System.Drawing.Size(99, 21)
+        Me.chkBatchOutputFile.Size = New System.Drawing.Size(77, 17)
         Me.chkBatchOutputFile.TabIndex = 18
         Me.chkBatchOutputFile.Text = "Output file:"
         Me.chkBatchOutputFile.UseVisualStyleBackColor = True
@@ -799,7 +798,7 @@ Partial Class MainForm
         Me.lblBatchFailedOutputText.Location = New System.Drawing.Point(9, 48)
         Me.lblBatchFailedOutputText.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblBatchFailedOutputText.Name = "lblBatchFailedOutputText"
-        Me.lblBatchFailedOutputText.Size = New System.Drawing.Size(158, 17)
+        Me.lblBatchFailedOutputText.Size = New System.Drawing.Size(120, 13)
         Me.lblBatchFailedOutputText.TabIndex = 19
         Me.lblBatchFailedOutputText.Text = "Failed execution output:"
         '
@@ -809,7 +808,7 @@ Partial Class MainForm
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBatchFailedOutputText.Location = New System.Drawing.Point(161, 45)
         Me.txtBatchFailedOutputText.Name = "txtBatchFailedOutputText"
-        Me.txtBatchFailedOutputText.Size = New System.Drawing.Size(787, 22)
+        Me.txtBatchFailedOutputText.Size = New System.Drawing.Size(787, 20)
         Me.txtBatchFailedOutputText.TabIndex = 18
         '
         'lblBatchSuccessfulOutputText
@@ -818,7 +817,7 @@ Partial Class MainForm
         Me.lblBatchSuccessfulOutputText.Location = New System.Drawing.Point(9, 22)
         Me.lblBatchSuccessfulOutputText.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblBatchSuccessfulOutputText.Name = "lblBatchSuccessfulOutputText"
-        Me.lblBatchSuccessfulOutputText.Size = New System.Drawing.Size(188, 17)
+        Me.lblBatchSuccessfulOutputText.Size = New System.Drawing.Size(144, 13)
         Me.lblBatchSuccessfulOutputText.TabIndex = 17
         Me.lblBatchSuccessfulOutputText.Text = "Successful execution output:"
         '
@@ -828,7 +827,7 @@ Partial Class MainForm
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBatchSuccessfulOutputText.Location = New System.Drawing.Point(161, 19)
         Me.txtBatchSuccessfulOutputText.Name = "txtBatchSuccessfulOutputText"
-        Me.txtBatchSuccessfulOutputText.Size = New System.Drawing.Size(787, 22)
+        Me.txtBatchSuccessfulOutputText.Size = New System.Drawing.Size(787, 20)
         Me.txtBatchSuccessfulOutputText.TabIndex = 0
         '
         'grpOutput
@@ -851,7 +850,7 @@ Partial Class MainForm
         Me.chkRemoveRemoveANSIEscapeSequencesFromOutput.Location = New System.Drawing.Point(5, 21)
         Me.chkRemoveRemoveANSIEscapeSequencesFromOutput.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.chkRemoveRemoveANSIEscapeSequencesFromOutput.Name = "chkRemoveRemoveANSIEscapeSequencesFromOutput"
-        Me.chkRemoveRemoveANSIEscapeSequencesFromOutput.Size = New System.Drawing.Size(317, 21)
+        Me.chkRemoveRemoveANSIEscapeSequencesFromOutput.Size = New System.Drawing.Size(244, 17)
         Me.chkRemoveRemoveANSIEscapeSequencesFromOutput.TabIndex = 22
         Me.chkRemoveRemoveANSIEscapeSequencesFromOutput.Text = "Remove ANSI Escape sequences from output"
         Me.chkRemoveRemoveANSIEscapeSequencesFromOutput.UseVisualStyleBackColor = True
@@ -876,7 +875,7 @@ Partial Class MainForm
         Me.chkEncryptAutoTelnetScriptFile.Location = New System.Drawing.Point(5, 18)
         Me.chkEncryptAutoTelnetScriptFile.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.chkEncryptAutoTelnetScriptFile.Name = "chkEncryptAutoTelnetScriptFile"
-        Me.chkEncryptAutoTelnetScriptFile.Size = New System.Drawing.Size(630, 21)
+        Me.chkEncryptAutoTelnetScriptFile.Size = New System.Drawing.Size(472, 17)
         Me.chkEncryptAutoTelnetScriptFile.TabIndex = 0
         Me.chkEncryptAutoTelnetScriptFile.Text = "Encrypt AutoTelnet script file (the password field will be encrypted without rega" &
     "rd to this setting)"
@@ -909,7 +908,7 @@ Partial Class MainForm
         Me.chkLogOnlyExecutionStatus.Location = New System.Drawing.Point(219, 50)
         Me.chkLogOnlyExecutionStatus.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.chkLogOnlyExecutionStatus.Name = "chkLogOnlyExecutionStatus"
-        Me.chkLogOnlyExecutionStatus.Size = New System.Drawing.Size(190, 21)
+        Me.chkLogOnlyExecutionStatus.Size = New System.Drawing.Size(146, 17)
         Me.chkLogOnlyExecutionStatus.TabIndex = 18
         Me.chkLogOnlyExecutionStatus.Text = "Log only execution status"
         Me.chkLogOnlyExecutionStatus.UseVisualStyleBackColor = True
@@ -921,7 +920,7 @@ Partial Class MainForm
         Me.chkLogEncryptCommandResponseEntries.Location = New System.Drawing.Point(9, 50)
         Me.chkLogEncryptCommandResponseEntries.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.chkLogEncryptCommandResponseEntries.Name = "chkLogEncryptCommandResponseEntries"
-        Me.chkLogEncryptCommandResponseEntries.Size = New System.Drawing.Size(270, 21)
+        Me.chkLogEncryptCommandResponseEntries.Size = New System.Drawing.Size(204, 17)
         Me.chkLogEncryptCommandResponseEntries.TabIndex = 17
         Me.chkLogEncryptCommandResponseEntries.Text = "Encrypt command and response entry"
         Me.chkLogEncryptCommandResponseEntries.UseVisualStyleBackColor = True
@@ -934,7 +933,7 @@ Partial Class MainForm
         Me.cmbLogMode.Location = New System.Drawing.Point(804, 22)
         Me.cmbLogMode.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbLogMode.Name = "cmbLogMode"
-        Me.cmbLogMode.Size = New System.Drawing.Size(144, 24)
+        Me.cmbLogMode.Size = New System.Drawing.Size(144, 21)
         Me.cmbLogMode.TabIndex = 16
         '
         'lblLogMode
@@ -945,7 +944,7 @@ Partial Class MainForm
         Me.lblLogMode.Location = New System.Drawing.Point(758, 25)
         Me.lblLogMode.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblLogMode.Name = "lblLogMode"
-        Me.lblLogMode.Size = New System.Drawing.Size(47, 17)
+        Me.lblLogMode.Size = New System.Drawing.Size(37, 13)
         Me.lblLogMode.TabIndex = 15
         Me.lblLogMode.Text = "Mode:"
         '
@@ -967,7 +966,7 @@ Partial Class MainForm
         Me.chkLogFile.Location = New System.Drawing.Point(9, 25)
         Me.chkLogFile.Margin = New System.Windows.Forms.Padding(5)
         Me.chkLogFile.Name = "chkLogFile"
-        Me.chkLogFile.Size = New System.Drawing.Size(80, 21)
+        Me.chkLogFile.Size = New System.Drawing.Size(63, 17)
         Me.chkLogFile.TabIndex = 12
         Me.chkLogFile.Text = "Log file:"
         Me.chkLogFile.UseVisualStyleBackColor = True
@@ -980,7 +979,7 @@ Partial Class MainForm
         Me.txtLogFile.Location = New System.Drawing.Point(99, 22)
         Me.txtLogFile.Margin = New System.Windows.Forms.Padding(5)
         Me.txtLogFile.Name = "txtLogFile"
-        Me.txtLogFile.Size = New System.Drawing.Size(566, 22)
+        Me.txtLogFile.Size = New System.Drawing.Size(566, 20)
         Me.txtLogFile.TabIndex = 13
         '
         'grpSettingsConnection
@@ -1008,7 +1007,7 @@ Partial Class MainForm
         Me.nudAttemptsRetryReading.Margin = New System.Windows.Forms.Padding(5)
         Me.nudAttemptsRetryReading.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.nudAttemptsRetryReading.Name = "nudAttemptsRetryReading"
-        Me.nudAttemptsRetryReading.Size = New System.Drawing.Size(80, 22)
+        Me.nudAttemptsRetryReading.Size = New System.Drawing.Size(80, 20)
         Me.nudAttemptsRetryReading.TabIndex = 21
         Me.nudAttemptsRetryReading.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -1018,7 +1017,7 @@ Partial Class MainForm
         Me.lblAttemptsRetryReading.Location = New System.Drawing.Point(388, 25)
         Me.lblAttemptsRetryReading.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblAttemptsRetryReading.Name = "lblAttemptsRetryReading"
-        Me.lblAttemptsRetryReading.Size = New System.Drawing.Size(152, 17)
+        Me.lblAttemptsRetryReading.Size = New System.Drawing.Size(112, 13)
         Me.lblAttemptsRetryReading.TabIndex = 20
         Me.lblAttemptsRetryReading.Text = "Attempts retry reading:"
         '
@@ -1028,11 +1027,11 @@ Partial Class MainForm
         Me.tbpNotes.Controls.Add(Me.chkItalic)
         Me.tbpNotes.Controls.Add(Me.chkBold)
         Me.tbpNotes.Controls.Add(Me.txtNotes)
-        Me.tbpNotes.Location = New System.Drawing.Point(4, 25)
+        Me.tbpNotes.Location = New System.Drawing.Point(4, 22)
         Me.tbpNotes.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tbpNotes.Name = "tbpNotes"
         Me.tbpNotes.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tbpNotes.Size = New System.Drawing.Size(974, 551)
+        Me.tbpNotes.Size = New System.Drawing.Size(974, 550)
         Me.tbpNotes.TabIndex = 2
         Me.tbpNotes.Text = "Notes"
         Me.tbpNotes.UseVisualStyleBackColor = True
@@ -1082,7 +1081,7 @@ Partial Class MainForm
         Me.txtNotes.Location = New System.Drawing.Point(8, 37)
         Me.txtNotes.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtNotes.Name = "txtNotes"
-        Me.txtNotes.Size = New System.Drawing.Size(960, 507)
+        Me.txtNotes.Size = New System.Drawing.Size(960, 506)
         Me.txtNotes.TabIndex = 0
         Me.txtNotes.Text = ""
         '
@@ -1114,6 +1113,12 @@ Partial Class MainForm
         Me.sfdBatchOutputFile.DefaultExt = "log"
         Me.sfdBatchOutputFile.Filter = "Output files (*.out)|*.out|All files|*.*"
         Me.sfdBatchOutputFile.Title = "Choose AutoTelnet output file"
+        '
+        'ofdLog
+        '
+        Me.ofdLog.DefaultExt = "log"
+        Me.ofdLog.Filter = "Log files (*.log)|*.log|All files|*.*"
+        Me.ofdLog.Title = "Choose AutoTelnet log file"
         '
         'MainForm
         '
@@ -1261,4 +1266,5 @@ Partial Class MainForm
     Friend WithEvents btnBrowseBatchOutputFile As System.Windows.Forms.Button
     Friend WithEvents sfdBatchOutputFile As System.Windows.Forms.SaveFileDialog
     Friend WithEvents chkLogOnlyExecutionStatus As System.Windows.Forms.CheckBox
+    Friend WithEvents ofdLog As OpenFileDialog
 End Class

@@ -193,18 +193,37 @@
 #End Region
 
 #Region "Gestione Log"
-    Private Sub ActivateLogViewer()
-        Me.mniToolsLogViewer.Enabled = Me.chkLogFile.Checked AndAlso Not String.IsNullOrWhiteSpace(Me.txtLogFile.Text)
-        Me.btnLogViewer.Enabled = Me.mniToolsLogViewer.Enabled
-        Me.tlsMain.Refresh()
-    End Sub
+    'Private Sub ActivateLogViewer()
+    '    Me.mniToolsLogViewer.Enabled = Me.chkLogFile.Checked AndAlso Not String.IsNullOrWhiteSpace(Me.txtLogFile.Text)
+    '    Me.btnLogViewer.Enabled = Me.mniToolsLogViewer.Enabled
+    '    Me.tlsMain.Refresh()
+    'End Sub
 
     Private Sub mniToolsLogViewer_Click(sender As Object, e As EventArgs) Handles mniToolsLogViewer.Click
         Me.SetWaitCursor(True)
         Try
+            Dim logFile = String.Empty
+            If Me.chkLogFile.Checked Then
+                If String.IsNullOrWhiteSpace(Me.txtLogFile.Text) Then
+                    UtilMsgBox.ShowError("The log file is not specified.", False)
+                    Exit Try
+                Else
+                    'logFile = Me.txtLogFile.Text
+                    Dim parameters = Me.GetParametersValuesFromControls()
+                    logFile = Util.ReplaceParameter(Me.txtLogFile.Text, Me.CurrentAutoTelnetScript, parameters)
+                End If
+            Else
+                If Me.ofdLog.ShowDialog(Me) = Windows.Forms.DialogResult.OK Then
+                    logFile = Me.ofdLog.FileName
+                Else
+                    Exit Try
+                End If
+            End If
+
+
             Using dlg As New LogDialog
-                Dim parameters = Me.GetParametersValuesFromControls()
-                Dim logFile = Util.ReplaceParameter(Me.txtLogFile.Text, Me.CurrentAutoTelnetScript, parameters)
+                'Dim parameters = Me.GetParametersValuesFromControls()
+                'Dim logFile = Util.ReplaceParameter(Me.txtLogFile.Text, Me.CurrentAutoTelnetScript, parameters)
                 dlg.LogFile = logFile
                 dlg.LogCommandAndResponseEntriesEncrypted = Me.chkLogEncryptCommandResponseEntries.Checked
                 dlg.ShowDialog(Me)
@@ -233,11 +252,11 @@
                 Application.ProductName & ".log")
         End If
 
-        Me.ActivateLogViewer()
+        'Me.ActivateLogViewer()
     End Sub
 
     Private Sub txtLogFile_TextChanged(sender As Object, e As EventArgs) Handles txtLogFile.TextChanged
-        Me.ActivateLogViewer()
+        'Me.ActivateLogViewer()
     End Sub
 
     Private Sub btnBrowseLogFile_Click(sender As Object, e As EventArgs) Handles btnBrowseLogFile.Click
