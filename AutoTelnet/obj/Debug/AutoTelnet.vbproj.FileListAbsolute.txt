@@ -80,3 +80,17 @@ F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0\AutoTelnet\obj\Debug\AutoTelnet.vbp
 F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0\AutoTelnet\obj\Debug\AutoTelnet.exe
 F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0\AutoTelnet\obj\Debug\AutoTelnet.pdb
 F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0\AutoTelnet\obj\Debug\AutoTelnet.vbprojResolveAssemblyReference.cache
+F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0 - Pubblicata su GitHub\AutoTelnet\bin\Debug\AutoTelnet.exe.config
+F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0 - Pubblicata su GitHub\AutoTelnet\bin\Debug\AutoTelnet.exe
+F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0 - Pubblicata su GitHub\AutoTelnet\bin\Debug\AutoTelnet.pdb
+F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0 - Pubblicata su GitHub\AutoTelnet\obj\Debug\AutoTelnet.vbprojAssemblyReference.cache
+F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0 - Pubblicata su GitHub\AutoTelnet\obj\Debug\AutoTelnet.AboutBox.resources
+F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0 - Pubblicata su GitHub\AutoTelnet\obj\Debug\AutoTelnet.LicenseForm.resources
+F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0 - Pubblicata su GitHub\AutoTelnet\obj\Debug\AutoTelnet.LogDialog.resources
+F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0 - Pubblicata su GitHub\AutoTelnet\obj\Debug\AutoTelnet.MainForm.resources
+F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0 - Pubblicata su GitHub\AutoTelnet\obj\Debug\AutoTelnet.Resources.resources
+F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0 - Pubblicata su GitHub\AutoTelnet\obj\Debug\AutoTelnet.ExpressionDialog.resources
+F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0 - Pubblicata su GitHub\AutoTelnet\obj\Debug\AutoTelnet.vbproj.GenerateResource.cache
+F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0 - Pubblicata su GitHub\AutoTelnet\obj\Debug\AutoTelnet.vbproj.CoreCompileInputs.cache
+F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0 - Pubblicata su GitHub\AutoTelnet\obj\Debug\AutoTelnet.exe
+F:\Dev\DevAdmin2017\Sources\AutoTelnet.1.4.0 - Pubblicata su GitHub\AutoTelnet\obj\Debug\AutoTelnet.pdb
