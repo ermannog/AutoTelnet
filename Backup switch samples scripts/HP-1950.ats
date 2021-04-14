@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-16"?>
+<AutoTelnetScript xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Host>@SwitchIP</Host>
+  <SendUser>true</SendUser>
+  <User>admin</User>
+  <SendPassword>true</SendPassword>
+  <Password>wUyJxwBR6tlIaQiG+tr+FQUcHX52oBzs</Password>
+  <Text>xtd-cli-mode
+y
+foes-bent-pile-atom-ship
+
+backup startup-configuration to @TFTPServerIP @SwitchName_@IDDate.cfg
+quit</Text>
+  <SendEndOfLine>CrLf</SendEndOfLine>
+  <BatchSuccessfulOutputText>@Date @SwitchName [HP 1910] Backup terminato</BatchSuccessfulOutputText>
+  <BatchFailedOutputText>@Date @SwitchName [HP 1910] Backup fallito</BatchFailedOutputText>
+  <BatchOutputFile>@OutputFile</BatchOutputFile>
+  <Parameters>
+    <AutoTelnetScriptParameter>
+      <Name>@SwitchIP</Name>
+      <DefaultValue>10.102.235.69</DefaultValue>
+    </AutoTelnetScriptParameter>
+    <AutoTelnetScriptParameter>
+      <Name>@SwitchName</Name>
+      <DefaultValue>069_Velostazione</DefaultValue>
+    </AutoTelnetScriptParameter>
+    <AutoTelnetScriptParameter>
+      <Name>@TFTPServerIP</Name>
+      <DefaultValue>10.102.235.32</DefaultValue>
+    </AutoTelnetScriptParameter>
+    <AutoTelnetScriptParameter>
+      <Name>@IDDate</Name>
+      <DefaultValue>{Now:yyyyMMddHHmm}</DefaultValue>
+    </AutoTelnetScriptParameter>
+    <AutoTelnetScriptParameter>
+      <Name>@OutputFile</Name>
+      <DefaultValue>C:\Software\AutoTelnet\AutoTelnet.out</DefaultValue>
+    </AutoTelnetScriptParameter>
+    <AutoTelnetScriptParameter>
+      <Name>@Date</Name>
+      <DefaultValue>{Now:yyyy-MM-dd HH:mm}</DefaultValue>
+    </AutoTelnetScriptParameter>
+  </Parameters>
+</AutoTelnetScript>
